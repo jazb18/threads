@@ -17,11 +17,10 @@ public class threadExample extends Thread {
 		
 		String[] data = {"Jose", "Juan", "Maria", "Iesus"};
 		
-		for (int i = 0; i < data.length; i++) {
-			
+		for (int i = 0; i < data.length; i++) {			
+			Thread.sleep(NORM_PRIORITY);
 			System.out.println(data[i]);
 			//Thread.sleep(4000);
-			Thread.sleep(NORM_PRIORITY);
 		}
 	}
 	
